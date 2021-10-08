@@ -193,7 +193,10 @@ namespace Week5_Test
             }
         }
 
-        internal static void ModificaSpesa()
+        //per modificare una spesa ho ipotizzato che fosse possibile modificare solamente la categoria di appartenenza,
+        //la descrizione e l'importo. Inoltre, quando una spesa già approvata viene modificata, torna allo stato di non
+        //approvata. 
+        internal static void ModificaSpesa() 
         {
             using GestioneSpeseContext ctx = new GestioneSpeseContext();
 
